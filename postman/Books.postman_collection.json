@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "a04779b5-d6a9-4d93-8d7b-22d628360fc0",
+		"name": "books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/books?name=MojaKsiazka2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "MojaKsiazka2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/books/book/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/books/book/7c308b82-0b3d-4d9d-806e-518fc920aed8",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"book",
+						"7c308b82-0b3d-4d9d-806e-518fc920aed8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "change book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/books/book/65d06d15-79b4-4e2f-a475-814442030d01?name=Nowa nazwa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"book",
+						"65d06d15-79b4-4e2f-a475-814442030d01"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Nowa nazwa"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
